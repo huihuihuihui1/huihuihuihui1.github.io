@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>Markdown语法使用教程</title>
+    <title>Hexo + Github搭建个人博客教程</title>
     <link href="/2024/03/13/My-New-Post/"/>
     <url>/2024/03/13/My-New-Post/</url>
     
-    <content type="html"><![CDATA[<ol><li>‘ hexo clean ‘清理hexo网页缓存</li><li>‘ hexo g ‘生成网页页面</li><li>‘ hexo s ‘生成本地文件</li><li>‘ hexo d ‘上传github部署</li></ol><blockquote><h3 id="标题语法"><a href="#标题语法" class="headerlink" title="标题语法"></a>标题语法</h3><p>  &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;<br>  -‘#‘的个数表示标题字体大小<br>-I really like Markdown<br>-I think I’ll use it to format all of my document from now on</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="这篇博客将会给大家Hexo-Github搭建个人博客网站的教程"><a href="#这篇博客将会给大家Hexo-Github搭建个人博客网站的教程" class="headerlink" title="这篇博客将会给大家Hexo+Github搭建个人博客网站的教程"></a>这篇博客将会给大家Hexo+Github搭建个人博客网站的教程</h2><h2 id="首先我们需要在自己电脑上配置好-git-node-和-npm"><a href="#首先我们需要在自己电脑上配置好-git-node-和-npm" class="headerlink" title="首先我们需要在自己电脑上配置好    git    ,   node    和   npm "></a>首先我们需要在自己电脑上配置好    <strong>git</strong>    ,   <strong>node</strong>    和   <strong>npm</strong> </h2><ol><li><strong>git</strong>的<strong>安装</strong>与<strong>配置</strong><br>首先我们到git官网<a href="https://git-scm.com/" title="真正的官网">Git官网</a>&lt;-点击连接直达<br>插入图片1<img src="/Download%E6%8C%87%E7%A4%BA.img" alt="Download位置"><br>找到Download下载</li></ol>]]></content>
     
     
     
