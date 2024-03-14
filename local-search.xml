@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Markdown语法使用教程</title>
+    <link href="/2024/03/13/My-New-Post/"/>
+    <url>/2024/03/13/My-New-Post/</url>
+    
+    <content type="html"><![CDATA[<ol><li>‘ hexo clean ‘清理hexo网页缓存</li><li>‘ hexo g ‘生成网页页面</li><li>‘ hexo s ‘生成本地文件</li><li>‘ hexo d ‘上传github部署</li></ol><blockquote><h3 id="标题语法"><a href="#标题语法" class="headerlink" title="标题语法"></a>标题语法</h3><p>  &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;<br>  -‘#‘的个数表示标题字体大小<br>-I really like Markdown<br>-I think I’ll use it to format all of my document from now on</p></blockquote>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>教程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2024/03/09/hello-world/"/>
     <url>/2024/03/09/hello-world/</url>
