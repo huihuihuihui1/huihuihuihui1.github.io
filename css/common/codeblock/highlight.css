@@ -365,7 +365,7 @@ pre,
 pre,
 code {
   line-height: 1.5 !important;
-  font-family: 'Geist Mono', Courier, monospace !important;
+  font-family: 'test', 'Geist Mono', Courier, monospace !important;
 }
 pre.mermaid {
   background-color: var(--background-color);
