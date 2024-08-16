@@ -19,6 +19,7 @@ if (isMini) {
     container: document.getElementById("aplayer"),
     mini: true,
     audio: audioList,
+    setTimeout : 1000,
   });
 } else if (isFixed) {
   const ap = new APlayer({
@@ -26,6 +27,7 @@ if (isMini) {
     fixed: true,
     lrcType: 3,
     audio: audioList,
+    setTimeout : 1000,
   });
   document.querySelector(".aplayer-icon-lrc").click();
 }
