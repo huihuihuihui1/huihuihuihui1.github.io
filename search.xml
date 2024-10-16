@@ -176,4 +176,45 @@
         <tag>Autohotkey</tag>
       </tags>
   </entry>
+  <entry>
+    <title>autohotkey学习笔记1</title>
+    <url>/2024/10/16/autohotkey%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/</url>
+    <content><![CDATA[<p>在学习使用autohotkey中，常常有些命令不熟悉，会忘记或者不理解。就在这里做个笔记，方便以后查阅。</p>
+<h1 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h1><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>单行注释：<code>;</code></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">; 这是一个单行注释</span><br></pre></td></tr></table></figure></div>
+<p>多行注释：<code>/* */</code></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*</span><br><span class="line">这是一个多行注释</span><br><span class="line">*/</span><br></pre></td></tr></table></figure></div>
+<p>快捷键</p>
+<p>快捷键由一个或多个修饰键和一个键组成，如<code>Ctrl+A</code>、<code>Alt+Tab</code>等。修饰键可以是<code>Ctrl</code>、<code>Alt</code>、<code>Shift</code>、<code>Win</code>等。键可以是字母、数字、空格、制表符、回车键、退格键等。快捷键可以用<code>^</code>、<code>!</code>、<code>+</code>、<code>#</code>等符号表示修饰键，如<code>^a</code>表示Ctrl+A，<code>!a</code>表示Alt+A，<code>+a</code>表示Shift+A，<code>#a</code>表示Win+A。<br>快捷键可以用<code>Send</code>命令发送</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">如 Send ^a 表示发送Ctrl+A。</span><br></pre></td></tr></table></figure></div>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>变量名必须以字母或下划线开头，后面可以是字母、数字或下划线。变量名区分大小写，如<code>a</code>和<code>A</code>是两个不同的变量。变量名不能是AutoHotkey的保留字，如<code>If</code>、<code>While</code>、<code>Loop</code>等。  </p>
+<p>变量赋值：<code>变量名 := 变量值</code></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">如 a := 1 表示将1赋值给变量a。</span><br></pre></td></tr></table></figure></div>
+<p>变量取值：<code>变量名</code></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">如 MsgBox %a% 表示弹出变量a的值。</span><br></pre></td></tr></table></figure></div>
+<p>变量运算：<code>变量名 运算符 变量名</code></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">如 a := 1 b := 2 c := a + b 表示将a和b的值相加，结果赋值给变量c。</span><br></pre></td></tr></table></figure></div>
+<p>变量比较：<code>变量名 比较运算符 变量名</code></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">如 a := 1 b := 2 If a &gt; b MsgBox &quot;a大于b&quot; 表示如果a大于b，则弹出提示框。</span><br><span class="line">比较运算符有`&gt;`、`&lt;`、`&gt;=`、`&lt;=`、`==`、`!=`。</span><br></pre></td></tr></table></figure></div>
+
+<p>字符串<br>字符串可以用单引号或双引号括起来，如<code>&quot;Hello&quot;</code>或<code>&#39;Hello&#39;</code>。字符串中可以包含转义字符，如<code>\n</code>表示换行，<code>\t</code>表示制表符。字符串可以连接起来，如<code>&quot;Hello&quot; . &quot;World&quot;</code>。<br> 字符串可以用<code>Len</code>函数获取长度，如<code>Len(&quot;Hello&quot;)</code>。<br> 字符串可以用<code>SubStr</code>函数截取子串，如<code>SubStr(&quot;HelloWorld&quot;, 1, 5)</code>。<br> 字符串可以用<code>Trim</code>函数去除前后空格，如<code>Trim(&quot; Hello &quot;)</code>。</p>
+<p> 关于GUI的使用v2版本<br> 创建一个GUI窗口</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">MyGUI := GUI()</span><br></pre></td></tr></table></figure></div>
+<p><code>add的函数值依次为：控件类型、位置、大小、文本内容</code><br>添加一个标签</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">MyGUI.add(&quot;Label&quot;, &quot;x=100, y=50, w=100, h=20&quot;, &quot;Hello World&quot;)</span><br></pre></td></tr></table></figure></div>
+<p>添加一个文本框</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">MyGUI.add(&quot;Text&quot;, &quot;x=100, y=100, w=200, h=20&quot;)</span><br></pre></td></tr></table></figure></div>
+<p>添加一个按钮</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">MyGUI.add(&quot;Button&quot;, &quot;x=100, y=150, w=100, h=20&quot;, &quot;Click Me&quot;)</span><br></pre></td></tr></table></figure></div>
+<p>显示窗口</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">MyGUI.Show()</span><br></pre></td></tr></table></figure></div>
+<p>获取文本框的值</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">MyGUI.GetText(&quot;Text&quot;)</span><br></pre></td></tr></table></figure></div>
+<p>获取按钮的值</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">MyGUI.GetText(&quot;Button&quot;)</span><br></pre></td></tr></table></figure></div>]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>autohotkey</tag>
+      </tags>
+  </entry>
 </search>
