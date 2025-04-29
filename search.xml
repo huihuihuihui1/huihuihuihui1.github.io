@@ -303,4 +303,25 @@
         <tag>工具</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Personal-CRM - 个人客户关系管理系统</title>
+    <url>/2025/04/29/Personal-CRM%E9%A1%B9%E7%9B%AE%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<h1 id="Personal-CRM-个人客户关系管理系统"><a href="#Personal-CRM-个人客户关系管理系统" class="headerlink" title="Personal-CRM - 个人客户关系管理系统"></a>Personal-CRM - 个人客户关系管理系统</h1><h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><p>Personal-CRM是一个开源的个人客户关系管理系统，由huihuihuihui1开发并维护在GitHub上。该项目旨在帮助个人用户更好地管理社交关系、客户信息和互动记录。</p>
+<h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ul>
+<li>联系人管理</li>
+<li>互动记录跟踪</li>
+<li>提醒功能</li>
+<li>数据分析</li>
+</ul>
+<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul>
+<li>前端: React&#x2F;Vue</li>
+<li>后端: Node.js&#x2F;Express</li>
+<li>数据库: MongoDB</li>
+</ul>
+<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a class="link"   href="https://github.com/huihuihuihui1/Personal-CRM.git" >GitHub仓库 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <tags>
+        <tag>工具推荐</tag>
+      </tags>
+  </entry>
 </search>
